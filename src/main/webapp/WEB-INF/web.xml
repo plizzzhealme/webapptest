@@ -8,25 +8,14 @@
                       http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
 
-  <!-- в мапинге мы указываем какой сервлет должен отработать
-  при обращении по определенному URL-->
   <servlet>
-    <servlet-name>testServlet</servlet-name>
-    <servlet-class>io.github.plizzzhealme.web.PutServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>testServlet</servlet-name>
-    <url-pattern>/add</url-pattern>
-  </servlet-mapping>
-
-  <servlet>
-    <servlet-name>deleteServlet</servlet-name>
-    <servlet-class>io.github.plizzzhealme.web.DeleteServlet</servlet-class>
+    <servlet-name>selectUser</servlet-name>
+    <servlet-class>io.github.plizzzhealme.web.Servlet</servlet-class>
   </servlet>
 
   <servlet-mapping>
-    <servlet-name>deleteServlet</servlet-name>
-    <url-pattern>/delete</url-pattern>
+    <servlet-name>selectUser</servlet-name>
+    <url-pattern>/select</url-pattern>
   </servlet-mapping>
 
 </web-app>

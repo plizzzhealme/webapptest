@@ -1,2 +1,5 @@
 # Project exclude paths
 /target/
+/.idea/
+/webapptest.iml
+/src/main/resources/*.log
